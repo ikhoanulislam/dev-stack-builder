@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ------------------------------------------------------------------ */
+/* Single source of truth for the brand gradient. Change this one     */
+/* value to re-theme the brand name, hero highlight, and primary CTAs.*/
+/* ------------------------------------------------------------------ */
+:root {
+  --gradient-brand: linear-gradient(90deg, #f97316 0%, #ec4899 55%, #8b5cf6 100%);
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  color: #0f1115;
+}
+
+.text-gradient-brand {
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.bg-gradient-brand {
+  background: var(--gradient-brand);
+}
+
+.stack-scrollbar::-webkit-scrollbar {
+  width: 6px;
+}
+.stack-scrollbar::-webkit-scrollbar-thumb {
+  background: #e5e7eb;
+  border-radius: 999px;
+}
