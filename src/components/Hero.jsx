@@ -31,10 +31,10 @@ export default function Hero() {
         <div className="relative w-72 h-72 sm:w-96 sm:h-96">
           <div className="absolute inset-6 rounded-[2rem] bg-gradient-brand opacity-20 blur-3xl" />
           <img
-            src="/banner-stack.png"
-            alt="Isometric illustration of a layered development stack"
-            className="relative w-full h-full object-contain"
-          />
+  src={`${import.meta.env.BASE_URL}banner-stack.png`}
+  alt="Isometric illustration of a layered development stack"
+  className="relative w-full h-full object-contain"
+/>
         </div>
       </div>
     </section>
